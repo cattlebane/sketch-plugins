@@ -1,0 +1,23 @@
+{
+  "author": "160over90: Jacques Altounian, Steve Arbizo, Joe Capra",
+  "commands": [
+    {
+      "script": "script.js",
+      "name": "InlineFit",
+      "handlers": {
+        "run": "onRun"
+      },
+      "identifier": "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu": {
+    "title": "InlineFit",
+    "items": ["com.bohemiancoding.sketch.runscriptidentifier"],
+    "isRoot": true
+  },
+  "identifier": "com.example.sketch.b68cb357-ffd1-4c8f-9b40-288df5c59cb2",
+  "version": "1.0",
+  "description": "",
+  "authorEmail": "",
+  "name": "InlineFit"
+}
