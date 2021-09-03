@@ -1,0 +1,25 @@
+{
+  "author": "Apple: Jacques Altounian",
+  "icon": "apple_code_logo.jpg",
+  "commands": [
+    {
+      "script": "script.js",
+      "name": "InlineFit",
+      "handlers": {
+        "run": "onRun"
+      },
+      "shortcut": "cmd alt t",
+      "identifier": "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu": {
+    "title": "InlineFit",
+    "items": ["com.bohemiancoding.sketch.runscriptidentifier"],
+    "isRoot": true
+  },
+  "identifier": "com.example.sketch.b68cb357-ffd1-4c8f-9b40-288df5c59cb2",
+  "version": "1.0.1",
+  "description": "Adjust font size to fit text within Text Field bounds.",
+  "authorEmail": "jacques_altounian@apple.com",
+  "name": "InlineFit"
+}
