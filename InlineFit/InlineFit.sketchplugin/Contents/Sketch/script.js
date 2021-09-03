@@ -55,11 +55,25 @@ var onRun = function (context) {
       var smallWidth = tempTF.frame.width
       var smallHeight = tempTF.frame.height
 
+console.log('large:', large)
+console.log('small:', small)
+console.log('parentWidth:', parentWidth)
+console.log('parentHeight:', parentHeight)
+console.log('largeWidth:', largeWidth)
+console.log('largeHeight:', largeHeight)
+console.log('smallWidth:', smallWidth)
+console.log('smallHeight:', smallHeight)
+
       // ** perform font size calculations based on the max/min dimensions
       var fontSizeWidth = rel(large, small, largeWidth, smallWidth, parentWidth)
       var fontSizeHeight = rel(large, small, largeHeight, smallHeight, parentHeight)
 
-      _fontSize = Math.max(_minFontSize, Math.floor(Math.min(_fontSize, Math.min(fontSizeWidth, fontSizeHeight))))
+      var adjustedFont = Math.floor(Math.min(_fontSize, Math.min(fontSizeWidth, fontSizeHeight)))
+
+console.log('adjustedFont:', adjustedFont)
+
+      _fontSize = Math.max(_minFontSize, adjustedFont)
+console.log('_fontSize:', _fontSize)
 
       // ** apply new font size to original Text Field
       layer.style.fontSize = _fontSize
@@ -67,4 +81,5 @@ var onRun = function (context) {
       tempTF.remove()
     }
   })
+
 }
